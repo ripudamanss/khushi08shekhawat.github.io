@@ -5,184 +5,7 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* ===== PAGE BACKGROUND ===== */
-    body {
-      background: linear-gradient(135deg, #eef7f1, #e4f1ea);
-      min-height: 100vh;
-      color: #1f3d2b;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 50px auto;
-      display: flex;
-      gap: 30px;
-      padding: 20px;
-    }
-
-    /* ===== PROFILE CARD ===== */
-    .profile-card {
-      width: 300px;
-      background: linear-gradient(135deg, #f5fbf8, #eaf6f0);
-      border-radius: 28px;
-      padding: 30px;
-      text-align: center;
-
-      border: 1px solid rgba(46, 125, 94, 0.35);
-      box-shadow: 0 18px 35px rgba(46, 125, 94, 0.18);
-    }
-
-    .profile-card img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 4px solid #2e7d5e;
-      background: white;
-    }
-
-    .profile-card h2 {
-      font-size: 1.7rem;
-      margin-bottom: 6px;
-      color: #1f5f46;
-    }
-
-    .profile-card p {
-      font-size: 0.9rem;
-      color: #3a5f4f;
-      margin-bottom: 16px;
-    }
-
-    .tags span {
-      display: inline-block;
-      background: #ffffff;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      margin: 5px;
-      color: #1f5f46;
-
-      border: 1px solid rgba(46, 125, 94, 0.35);
-    }
-
-    .links a {
-      display: inline-block;
-      margin: 14px 8px 0;
-      text-decoration: none;
-      color: #2e7d5e;
-      font-weight: 500;
-      font-size: 0.85rem;
-    }
-
-    /* ===== CONTENT AREA ===== */
-    .content {
-      flex: 1;
-    }
-
-    section {
-      background: linear-gradient(135deg, #ffffff, #f1faf5);
-      border-radius: 26px;
-      padding: 26px;
-      margin-bottom: 26px;
-
-      border: 1px solid rgba(46, 125, 94, 0.35);
-      box-shadow: 0 16px 32px rgba(46, 125, 94, 0.18);
-
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 22px 42px rgba(46, 125, 94, 0.28);
-    }
-
-    section h3 {
-      margin-bottom: 12px;
-      color: #1f5f46;
-      font-size: 1.2rem;
-    }
-
-    section p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #355f4c;
-    }
-
-    /* ===== SKILLS ===== */
-    .skills span {
-      display: inline-block;
-      background: linear-gradient(135deg, #e6f6ee, #f3fbf7);
-      color: #1f5f46;
-      padding: 8px 16px;
-      border-radius: 22px;
-      margin: 6px;
-      font-size: 0.8rem;
-
-      border: 1px solid rgba(46, 125, 94, 0.4);
-    }
-
-    /* ===== PROJECTS ===== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: linear-gradient(135deg, #ffffff, #edf8f2);
-      border-radius: 22px;
-      padding: 20px;
-
-      border: 1px solid rgba(46, 125, 94, 0.4);
-      box-shadow: 0 14px 26px rgba(46, 125, 94, 0.18);
-
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 22px 40px rgba(46, 125, 94, 0.3);
-    }
-
-    .project-card h4 {
-      margin-bottom: 8px;
-      color: #1f5f46;
-    }
-
-    .project-card p {
-      font-size: 0.85rem;
-      color: #355f4c;
-      margin-bottom: 10px;
-    }
-
-    .project-card a {
-      text-decoration: none;
-      font-size: 0.85rem;
-      color: #2e7d5e;
-      font-weight: 500;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 900px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .profile-card {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -191,7 +14,7 @@
 
   <!-- PROFILE CARD -->
   <div class="profile-card">
-    <img src="DDD15B96-83AC-4BE2-B312-2DD5DC4C7FE2.jpg" alt="Profile">
+    <img src="/src/img/DDD15B96-83AC-4BE2-B312-2DD5DC4C7FE2.jpg" alt="Profile Picture">
 
     <h2>Khushi Shekhawat</h2>
     <p>B.Tech (CSE) | Batch'27<br>Amity University Rajasthan</p>
@@ -264,6 +87,38 @@
 
   </div>
 </div>
+<footer class="footer">
+  <div class="footer-container">
 
+    <!-- Left Side -->
+     <h2 class="glitch-name">
+      <span id="type-text">Khushi Shekhawat</span>
+     </h2>
+     <p>App Developer, Full-Stack Developer & UI/UX Designer</p>
+  </div>
+
+    <!-- Right Side -->
+     <div class="footer-right">
+      <div class="footer-column">
+        <h4>Pages</h4>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Blogs</a>
+        <a href="#">Privacy</a>
+      </div>
+     </div>
+
+      <div class="footer-column">
+        <h4>SOCIAL</h4>
+        <a href="#">X</a>
+        <a href="https://github.com/khushi08shekhawat">GitHub</a>
+        <a href="https://www.linkedin.com/in/khushi-shekhawat-45616331b/">LinkedIn</a>
+      </div>
+  </div>    
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2026 Khushi Shekhawat. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
