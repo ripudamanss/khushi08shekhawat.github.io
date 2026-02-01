@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Khushi Shekhawat | Portfolio</title>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi Shekhawat | Portfolio</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/style.css">
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+      const progress = (scrollTop / height) * 100;
+      document.getElementById("scroll-bar").style.width = progress + "%";
+    });
+  </script>
+
 </head>
 
 <body>
+  <div id="scroll-bar"></div>
 
-<div class="container">
+  <div class="container">
 
-  <!-- PROFILE CARD -->
-  <div class="profile-card">
-    <img src="/src/img/DDD15B96-83AC-4BE2-B312-2DD5DC4C7FE2.jpg" alt="Profile Picture">
+    <!-- PROFILE CARD -->
+    <div class="profile-card">
+      <img src="/src/img/DDD15B96-83AC-4BE2-B312-2DD5DC4C7FE2.jpg" alt="Profile Picture">
 
-    <h2>Khushi Shekhawat</h2>
-    <p>B.Tech (CSE) | Batch'27<br>Amity University Rajasthan</p>
+      <h2 class="glitch-name">Khushi Shekhawat</h2>
+      <p>B.Tech (CSE) | Batch'27<br>Amity University Rajasthan</p>
 
-    <div class="tags">
-	<span> Aspiring Software Developer </span>
-      <span>Web Development </span>
-      <span>AI</span>
-      <span>Graphic Design</span>
-    </div>
-
-    <div class="links">
-      <a href="https://www.linkedin.com/in/khushi-shekhawat-45616331b/">LinkedIn</a>
-      <a href="https://github.com/khushi08shekhawat">GitHub</a>
-      <a href="khushishekhawat0811@gmail.com">Email</a>
-    </div>
-  </div>
-
-  <!-- CONTENT -->
-  <div class="content">
-
-    <section>
-      <h3>About Me</h3>
-      <p>
-       I'm a Computer Science Engineering student at Amity University Rajasthan, primarily focused on Software Development Engineering (SDE). Alongside strong programming fundamentals, I have experience in Artificial Intelligence, Data Science, and Web Development, with a creative interest in design-driven solutions.
-
-      </p>
-    </section>
-
-    <section>
-      <h3>Skills</h3>
-      <div class="skills">
-        <span>C / C++</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Machine Learning</span>
-        <span>Generative AI</span>
+      <div class="tags">
+        <span> Aspiring Software Developer </span>
+        <span>Web Development </span>
+        <span>AI</span>
         <span>Graphic Design</span>
       </div>
-    </section>
 
-    <section>
-      <h3>Projects</h3>
-      <div class="projects">
-
-        <div class="project-card">
-          <h4>Landmark Detection using CNNs</h4>
-          <p>Built a Landmark Detection System that identifies and classifies real-world landmarks from images using a Convolutional Neural Network (CNN)</p>
-         <a href="https://github.com/khushi08shekhawat/Landmark-Detection-" target="_blank">
-  View on GitHub
-</a>
-        </div>
-
-        <div class="project-card">
-          <h4>Object Detection System using TensorFlow & OpenCV</h4>
-          <p>Built a scalable object detection system using Python, TensorFlow, and OpenCV with bounding box–based localization.</p>
-          <a href="https://github.com/khushi08shekhawat/Object-Detection-using-TensorFlow"> View on GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h4>Pet Face Classification System</h4>
-          <p>Built an end-to-end pet face classification system using Python and TensorFlow with a structured training and inference pipeline.</p>
-          <a href="https://github.com/khushi08shekhawat/Pet-Face-Classification">View on GitHub</a>
-        </div>
-
+      <div class="links">
+        <a href="https://www.linkedin.com/in/khushi-shekhawat-45616331b/">LinkedIn</a>
+        <a href="https://github.com/khushi08shekhawat">GitHub</a>
+        <a href="khushishekhawat0811@gmail.com">Email</a>
       </div>
-    </section>
+    </div>
 
-  </div>
-</div>
-<footer class="footer">
-  <div class="footer-container">
+    <!-- CONTENT -->
+    <div class="content">
 
-    <!-- Left Side -->
-     <h2 class="glitch-name">
-      <span id="type-text">Khushi Shekhawat</span>
-     </h2>
-     <p>App Developer, Full-Stack Developer & UI/UX Designer</p>
+      <section>
+        <h3>About Me</h3>
+        <p>
+          I'm a Computer Science Engineering student at Amity University Rajasthan, primarily focused on Software
+          Development Engineering (SDE). Alongside strong programming fundamentals, I have experience in Artificial
+          Intelligence, Data Science, and Web Development, with a creative interest in design-driven solutions.
+
+        </p>
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <div class="skills">
+          <span>C / C++</span>
+          <span>Java</span>
+          <span>Python</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Machine Learning</span>
+          <span>Generative AI</span>
+          <span>Graphic Design</span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Projects</h3>
+        <div class="projects">
+
+          <div class="project-card">
+            <h4>Landmark Detection using CNNs</h4>
+            <p>Built a Landmark Detection System that identifies and classifies real-world landmarks from images using a
+              Convolutional Neural Network (CNN)</p>
+            <a href="https://github.com/khushi08shekhawat/Landmark-Detection-" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h4>Object Detection System using TensorFlow & OpenCV</h4>
+            <p>Built a scalable object detection system using Python, TensorFlow, and OpenCV with bounding box–based
+              localization.</p>
+            <a href="https://github.com/khushi08shekhawat/Object-Detection-using-TensorFlow"> View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <h4>Pet Face Classification System</h4>
+            <p>Built an end-to-end pet face classification system using Python and TensorFlow with a structured training
+              and inference pipeline.</p>
+            <a href="https://github.com/khushi08shekhawat/Pet-Face-Classification">View on GitHub</a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
   </div>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left Side -->
+      <h2 class="glitch-name">
+        <span id="type-text">Khushi Shekhawat</span>
+      </h2>
+      <p>App Developer, Full-Stack Developer & UI/UX Designer</p>
+    </div>
 
     <!-- Right Side -->
-     <div class="footer-right">
+    <div class="footer-right">
       <div class="footer-column">
         <h4>Pages</h4>
         <a href="#">Home</a>
@@ -106,19 +126,24 @@
         <a href="#">Blogs</a>
         <a href="#">Privacy</a>
       </div>
-     </div>
+    </div>
 
-      <div class="footer-column">
-        <h4>SOCIAL</h4>
-        <a href="#">X</a>
-        <a href="https://github.com/khushi08shekhawat">GitHub</a>
-        <a href="https://www.linkedin.com/in/khushi-shekhawat-45616331b/">LinkedIn</a>
-      </div>
-  </div>    
+    <div class="footer-column">
+      <h4>SOCIAL</h4>
+      <a href="#">X</a>
+      <a href="https://github.com/khushi08shekhawat">GitHub</a>
+      <a href="https://www.linkedin.com/in/khushi-shekhawat-45616331b/">LinkedIn</a>
+    </div>
+    </div>
     <!-- Bottom Bar -->
     <div class="footer-bottom">
       <p>© 2026 Khushi Shekhawat. All rights reserved.</p>
     </div>
-</footer>
+  </footer>
 </body>
+
 </html>
+</body>
+
+</html>
+<title>Khushi Shekhawat | Portfolio</title>

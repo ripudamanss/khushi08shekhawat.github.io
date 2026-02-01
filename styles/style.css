@@ -5,6 +5,34 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    /* ===== SCROLL BAR ===== */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(93, 169, 255, 0);
+  border-radius: 10px;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5da9ff, #a855f7);
+}
+
+
+    #scroll-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        width: 0%;
+        background: linear-gradient(90deg, #5da9ff, #a855f7, #22c55e);
+        z-index: 9999;
+        box-shadow: 0 0 10px rgba(93, 169, 255, 0.6);
+    }
+
+
+
     /* ===== PAGE BACKGROUND ===== */
     body {
         background: linear-gradient(135deg, #eef7f1, #e4f1ea);
@@ -121,6 +149,13 @@
 
         border: 1px solid rgba(46, 125, 94, 0.4);
     }
+
+    .skills span:hover {
+        background: linear-gradient(135deg, #d1f0dd, #e3f7ee);
+        box-shadow: 0 8px 16px rgba(46, 125, 94, 0.2);
+        transform: translateY(-2px);
+    }
+
 
     /* ===== PROJECTS ===== */
     .projects {
